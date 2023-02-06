@@ -1,0 +1,28 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "create": "npx playwright test tests/create.spec.ts --project=firefox",
+    "send": "npx playwright test tests/send.spec.ts --project=firefox",
+
+    "dev-c": "npx playwright test tests/create.spec.ts --project=firefox --headed",
+    "dev-s": "npx playwright test tests/send.spec.ts --project=firefox --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustGritt/Playwright-Automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustGritt/Playwright-Automation/issues"
+  },
+  "homepage": "https://github.com/JustGritt/Playwright-Automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.30.0"
+  }
+}
